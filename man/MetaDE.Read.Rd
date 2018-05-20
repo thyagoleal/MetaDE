@@ -58,7 +58,7 @@ rownames(exp2)<-paste("g2",1:20,sep="_")
 study1<-rbind(label1,exp1)
 study2<-rbind(label2,exp2)
 write.table(study1,"study1.txt",sep="\t")
-write.table(study1,"study2.txt",sep="\t")
+write.table(study2,"study2.txt",sep="\t")
 mydata<-MetaDE.Read(c("study1","study2"),via="txt",skip=rep(1,2),matched=TRUE,log=FALSE)
 #================Non-matched  =============================================================#
 label1<-rep(0:1,each=5)
