@@ -598,7 +598,7 @@ draw.DEnumber<-function(result,maxcut,mlty=NULL,mcol=NULL,mlwd=NULL,mpch=NULL,FD
 		if(class(result)=="MetaDE.pvalue"){
 			pm<-cbind(result$ind.p,result$meta.analysis$pval) 
 		}else if(class(result)=="MetaDE.ES"){
-			pm<-cbind(result$meta.analysis$pval)
+			pm<-cbind(result$pval)
 			colnames(pm)<-attr(result$meta.analysis,"meta.method")
 		}else if(class(result)=="MetaDE.minMCC"){
 			pm<-cbind(result$meta.analysis$pval)
